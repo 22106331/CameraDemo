@@ -245,6 +245,7 @@ public class CameraCapturer {
                 } catch (IOException e) {
                     Log.d(TAG, "save photo failed", e);
                 }
+                image.close();
             }
         });
     }
